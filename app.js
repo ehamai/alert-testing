@@ -1,7 +1,7 @@
 // app.js
 const express = require('express');
 const app = express();
-const port = 80;
+const port = process.env.PORT || 3000
 
 // Define a single API endpoint that always returns an HTTP 500 error
 app.get('/', (req, res) => {
